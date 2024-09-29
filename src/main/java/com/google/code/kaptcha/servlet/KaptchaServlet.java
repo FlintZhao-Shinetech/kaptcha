@@ -7,16 +7,16 @@ import java.util.Enumeration;
 import java.util.Properties;
 
 import javax.imageio.ImageIO;
-import javax.servlet.Servlet;
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletException;
-import javax.servlet.ServletOutputStream;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 import com.google.code.kaptcha.Producer;
 import com.google.code.kaptcha.util.Config;
+
+import jakarta.servlet.ServletConfig;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.ServletOutputStream;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 /**
  * This servlet uses the settings passed into it via the Producer api.
@@ -26,7 +26,7 @@ import com.google.code.kaptcha.util.Config;
  * @author cliffano
  */
 @SuppressWarnings("serial")
-public class KaptchaServlet extends HttpServlet implements Servlet
+public class KaptchaServlet extends HttpServlet
 {
 	private Properties props = new Properties();
 
@@ -39,7 +39,7 @@ public class KaptchaServlet extends HttpServlet implements Servlet
 	/*
 	 * (non-Javadoc)
 	 *
-	 * @see javax.servlet.Servlet#init(javax.servlet.ServletConfig)
+	 * @see jakarta.servlet.Servlet#init(jakarta.servlet.ServletConfig)
 	 */
 	@Override
 	public void init(ServletConfig conf) throws ServletException

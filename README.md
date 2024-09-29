@@ -3,9 +3,9 @@
 This repo is the copy of http://code.google.com/p/kaptcha/ and published to maven central
 ```
 <dependency>
-  <groupId>pro.fessional</groupId>
+  <groupId>com.shinetechsoftware</groupId>
   <artifactId>kaptcha</artifactId>
-  <version>2.3.3</version>
+  <version>2.3.4</version>
 </dependency>
 ```
 
